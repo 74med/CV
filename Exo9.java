@@ -1,15 +1,13 @@
 package MonPremierProjet;
 
+
 import java.util.Scanner;
 
-public class Exo9 
-
-{		
-	static int jeune, moyen, vieux, age = 0; //on déclare les variables qui vont nous êtres utiles
-
+public class Exo9 {
+    static int jeune, moyen, vieux, age = 0; //on déclare les variables qui vont nous êtres utiles
 
     public static void main(String[] args) {
-    // tape ton code
+	// write your code here
         Scanner sc = new Scanner(System.in); // import scanner
 
         do{
@@ -29,8 +27,7 @@ public class Exo9
 
 
             //if((jeune < 20) | (moyen < 40) | (vieux >= 40)) {
-                /* on utilise switch et case pour des conditions à la carte en appelant l'operateur
-                 * et en le definissant avec le case "" */
+         
 
             if(age < 20){
                 jeune++;
@@ -44,9 +41,8 @@ public class Exo9
         }}while(age < 100);
 
         vieux++;
-        System.out.println("Il y a désormais " + vieux + " personne(s) agée(s) mais aussi " + jeune + " jeunes et pour finir " + moyen + " personnes d'âge moyen, 1nous avons enfin trouvé un centenaire, fin du programme...");
+        System.out.println("Il y a désormais " + vieux + " personne(s) agée(s) et nous avons trouvé un centenaire, fin du programme...");
 
         sc.close();
     }
-	
-	}
+}
